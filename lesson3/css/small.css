@@ -1,0 +1,24 @@
+/* nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+} */
+header footer {
+    background-color: #9F9AA4;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul {
+    display: block;
+}
+nav {
+    background-color:#5ABCB9;
+    text-align: center;
+}
+body {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;;
+}
