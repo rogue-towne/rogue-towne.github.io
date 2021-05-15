@@ -7,7 +7,6 @@
 header, footer {
     background-color:var(--green);
     font-family: 'Montserrat', sans-serif;
-
 }
 .motto, header {
     text-align: left;
@@ -26,15 +25,27 @@ body {
     width: 90%;
     text-align: center;
 }
-
-nav ul {
-    display: grid;
-    list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
-    margin: 0;
-    justify-items: center;
-    padding: 10px;
-
+.navigation{
+    padding:0;
+}
+.navigation li:first-child{
+    display: block;
+    padding:var(--blue) 0;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+.responsive li{
+    display: block;
+}
+ul{
+    text-decoration: none;
 }
 a:link, a:visited {
     background-color: var(--blue);
@@ -64,5 +75,4 @@ p {
     margin: 5x;
     background-color: var(--blue);
     width: 90%;
-
 }

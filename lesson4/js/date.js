@@ -29,7 +29,7 @@ var month = months[d.getMonth()];
 var day = weekday[d.getDay()] ;
 var daydigit = d.getDate();
 var year = d.getFullYear();
-var date = day +', '+ month + ' ' + daydigit + ' ' + year;
+var date = day +', '+ daydigit + ' ' + month +  ' ' + year;
 
 document.querySelector('#date').textContent = date
 
