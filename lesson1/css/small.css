@@ -7,7 +7,6 @@ header {
     color: #D8D4F2;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    
 }
 h1 {
     margin: 0;
@@ -18,9 +17,10 @@ h2 {
     font-size: 1rem;
 }
 img {
-    width: 300px;
+    max-width: 30%;
     height: auto;
     object-fit: cover;
+    float: right;
 }
 
 main {

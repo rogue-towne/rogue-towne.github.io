@@ -2,19 +2,25 @@ body {
     font-family: 'Scada', sans-serif;
     font-size: 16px;
     background-color: #BEDAD6;
+    text-align: center;
 }
 section {
     display: block;
 }
 
-header main nav footer {
-    max-width: 45rem;
-    margin: 10px;
-    line-height: 1.4;
-}
 main section {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 1rem;
+    margin: 2em;
     border: 0.5px;
 }
+h1, h2, h3, img{
+    margin: auto;
+}
+p {
+    padding: 15px;
+}
+img {
+    max-width: 100%;
+}
+

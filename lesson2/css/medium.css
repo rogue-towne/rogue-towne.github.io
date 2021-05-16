@@ -12,8 +12,4 @@
     header footer {
         border-radius: 15px;
     }
-    img {
-        box-shadow: 0 0 30px;
-        border-radius: 1px 10px 0 0;
-    }
 }
