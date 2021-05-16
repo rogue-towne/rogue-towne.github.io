@@ -6,13 +6,9 @@
 }
 header, footer {
     background-color:var(--green);
-    font-family: 'Montserrat', sans-serif;
-}
-.motto, header {
-    text-align: left;
+    font-family: 'Nanum Brush Script', cursive;
 }
 .contentbox {
-    display: block;
     margin: 30px auto;
     padding: 15px;
     background-color: var(--blue);
@@ -20,13 +16,13 @@ header, footer {
 }
 body {
     color: var(--dark);
-    font-family: 'Noto Sans KR', sans-serif;;
+    font-family: 'Nanum Gothic', sans-serif;
     margin: auto;
-    width: 90%;
     text-align: center;
+    font-size: 1.2rem;
 }
 .navigation{
-    padding:0;
+    padding: 0;
 }
 .navigation li:first-child{
     display: block;
@@ -61,18 +57,19 @@ nav {
     background-color:var(--blue);
 }
 .logo {
-    width: 150px;
+    width: 100px;
     height: auto;
+}
+.motto {
+    margin: auto;
+    background-color: var(--blue);
+    font-size: 1.1rem;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 h1 {
     font-size: 3rem;
     margin: 0;
 }
-p {
-    font-size: 1.1rem;
-}
-.motto {
-    margin: 5x;
-    background-color: var(--blue);
-    width: 90%;
+footer {
+    font-size: 1.5rem;
 }
