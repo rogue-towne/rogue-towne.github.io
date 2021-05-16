@@ -1,5 +1,6 @@
 @media only screen and (min-width: 32.5em) {
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
     header {
@@ -12,7 +13,6 @@
         border-radius: 15px;
     }
     img {
-        float: right;
         box-shadow: 0 0 30px;
         border-radius: 1px 10px 0 0;
     }

@@ -6,16 +6,15 @@ body {
 section {
     display: block;
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 header main nav footer {
     max-width: 45rem;
     margin: 10px;
     line-height: 1.4;
 }
 main section {
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 1rem;
     border: 0.5px;
 }
