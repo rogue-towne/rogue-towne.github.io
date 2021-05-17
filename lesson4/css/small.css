@@ -1,7 +1,7 @@
 :root {
     --primary:#A9E21C;
     --secondary: #5ABCB9;
-    --dark: #011627;
+    --accent1: #011627;
 }
 header, footer {
     background-color:var(--primary);
@@ -25,7 +25,6 @@ body {
 }
 .navigation li:first-child{
     display: block;
-    padding:var(--blue) 0;
 }
 .navigation li {
     display: none;

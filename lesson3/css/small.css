@@ -2,27 +2,122 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 } */
+:root {
+    --primary:#A9E21C;
+    --secondary: #5ABCB9;
+    --accent1: #011627;
+    --accent2: #9F9AA4;
+
+}
+body {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+    background-color: #D4EDED;
+}
+
 .motto {
     display: inline;
 }
-header footer {
-    background-color: #9F9AA4;
+header, footer {
+    padding: 15px;
+}
+.navigation a{
+    display: block;
 }
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    text-align: center;
 }
-ul {
+ul, ol {
     display: block;
+    font-size: 1.5rem;
+    text-align: left; 
+    font-size: 1.1rem;
 }
-nav {
+p {
+    text-align: initial;
+}
+nav, footer{
     background-color:#5ABCB9;
     text-align: center;
 }
-body {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-}
 
+nav a{
+    text-decoration:none;
+    color: black; 
+}
+nav a:link, nav a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+nav a:hover, nav a:active {
+    background-color: white;
+  }
+img {
+    max-width: 50%;
+    height: auto;
+}
+table th, td{
+ 
+    border: 1px solid black;
+  }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+
+} 
+.primary {
+    color: var(--accent1);
+    background-color: var(--primary)
+}
+.secondary {
+    color: var(--accent1);
+    background-color: var(--secondary);
+}
+.accent1 {
+    color: white;
+    background-color: var(--accent1);
+}
+.accent2 {
+    color: white;
+    background-color: var(--accent2);
+}
+a:link, a:visited {
+    color: rgb(0, 9, 128);
+}
+a:hover, a:active {
+    color: salmon;
+}
+.siteheader , .heading1{
+    background-color: var(--primary);
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 5rem;
+}
+.primarynav {
+    background-color: var(--secondary);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2rem;
+}
+.footernav {
+    background-color: var(--primary);
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.7rem;
+}
+.heading2, .heading3, .paragraphtext {
+    background-color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 2.5rem;
+}
+.heading3 {
+    font-size: 2rem;
+}
+.paragraphtext {
+    font-size: 1.2rem;
+}
