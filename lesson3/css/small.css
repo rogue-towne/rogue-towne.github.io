@@ -86,7 +86,7 @@ table {
     background-color: var(--accent1);
 }
 .accent2 {
-    color: var(--accent1);
+    color: var(--accent1whitew);
     background-color: var(--accent2);
 }
 a:link, a:visited {
