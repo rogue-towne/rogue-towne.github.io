@@ -1,0 +1,89 @@
+:root {
+    --primary:#A9E21C;
+    --secondary: #5ABCB9;
+    --accent1: #011627;
+}
+header, footer {
+    background-color:var(--primary);
+    font-family: 'Nanum Brush Script', cursive;
+}
+.contentbox {
+    margin: 30px auto;
+    padding: 15px;
+    background-color: var(--secondary);
+    width: 70%;
+}
+body {
+    color: var(--dark);
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.navigation{
+    padding: 0;
+}
+.navigation li:first-child{
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+.responsive li{
+    display: block;
+}
+ul{
+    text-decoration: none;
+}
+a:link, a:visited {
+    background-color: var(--secondary);
+    color: var(--dark);
+    text-decoration: none;
+    padding: 7px;
+}
+a:hover, a:active {
+    background-color: var(--primary);
+    color: var(--dark);
+  }
+nav {
+    background-color:var(--secondary);
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+.motto {
+    margin: auto;
+    background-color: var(--secondary);
+    font-size: 1.1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+footer {
+    font-size: 1.5rem;
+}
+.weather-summary-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+.weather-summary {
+    background-color: white;
+    border: 2px solid var(--primary);
+    max-width: 50%;
+    
+     
+}
+h3 {
+    text-align: center;
+}
