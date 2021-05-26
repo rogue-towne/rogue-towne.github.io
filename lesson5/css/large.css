@@ -4,25 +4,25 @@
         margin: auto;
     }
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
         margin: 0;
     }
     footer {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .motto {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .logo {
-        width: 200px;
+        width: 100px;
     }
-    
     .hero-div {
         margin: 10px auto;
         position: relative;
+        max-width: 80%;
     }
     .weather-summary {
         position: absolute;

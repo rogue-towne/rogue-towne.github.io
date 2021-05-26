@@ -33,3 +33,7 @@ var date = day +', '+ daydigit + ' ' + month +  ' ' + year;
 
 document.querySelector('#date').textContent = date
 
+if (d.getDay() == 5){
+    document.querySelector('.pancake-banner').style.display = 'block';
+}
+

@@ -13,6 +13,12 @@ header, footer {
     background-color: var(--secondary);
     width: 70%;
 }
+.pancake-banner {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+}
+
 body {
     color: var(--dark);
     font-family: 'Nanum Gothic', sans-serif;
@@ -29,30 +35,34 @@ body {
 .navigation li {
     display: none;
 }
+
 .navigation a {
     display: block;
     text-align: center;
-    text-decoration: none;
     padding: 0.75rem;
+
 }
 .responsive li{
     display: block;
 }
-ul{
-    text-decoration: none;
-}
 a:link, a:visited {
-    background-color: var(--secondary);
+
     color: var(--dark);
-    text-decoration: none;
     padding: 7px;
 }
 a:hover, a:active {
-    background-color: var(--primary);
+    background-color: #3B918E;
     color: var(--dark);
   }
 nav {
-    background-color:var(--secondary);
+    background-color: var(--secondary);
+}
+.active {
+    text-decoration: underline;
+    background-color: var(--primary);
+}
+a {
+    text-decoration: none;
 }
 .logo {
     width: 100px;
@@ -81,8 +91,6 @@ footer {
     background-color: white;
     border: 2px solid var(--primary);
     max-width: 50%;
-    
-     
 }
 h3 {
     text-align: center;
