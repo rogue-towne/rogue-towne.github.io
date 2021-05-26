@@ -46,7 +46,6 @@ body {
     display: block;
 }
 a:link, a:visited {
-
     color: var(--dark);
     padding: 7px;
 }
@@ -94,4 +93,8 @@ footer {
 }
 h3 {
     text-align: center;
+}
+.contacts {
+    list-style-type: none;
+    padding: 0;
 }
