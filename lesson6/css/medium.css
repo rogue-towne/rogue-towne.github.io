@@ -1,0 +1,34 @@
+@media only screen and (min-width: 32.5em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    h1 {
+        font-size: 5rem;
+        margin: 0;
+    }
+    footer {
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+    .weather-icon {
+        width: 15%;
+    }
+    .forecast-table {
+        
+        border: 2px solid var(--secondary);
+    }
+    
+}

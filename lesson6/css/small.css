@@ -58,6 +58,7 @@ nav {
     background-color: var(--secondary);
 }
 .active {
+    /*text-decoration: underline;*/
     border-bottom: 6px solid var(--secondary);
     background-color: var(--primary);
 }
@@ -87,7 +88,7 @@ footer {
     padding: 20px;
     grid-gap: 10px;
   }
-.weather-summary {
+  .weather-summary {
     background-color: rgba(0,0,0,0.6);
     max-width: 50%;
     color: white;
