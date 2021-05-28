@@ -8,7 +8,7 @@
         margin: 0;
     }
     footer {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     h2{
         font-size: 2rem;
@@ -24,8 +24,8 @@
     }
     .weather-summary {
         position: absolute;
-        top: 50px;
-        left: 350px;
+        top: 15px;
+        left: 55px;
     }
     .hero-photo {
         width: 100%;

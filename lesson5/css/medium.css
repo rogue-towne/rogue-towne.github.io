@@ -20,6 +20,12 @@
     footer {
         font-size: 1.7rem;
     }
+    .weather-summary {
+        position: absolute;
+        
+        top: -10px;
+        left: 50px;
+    }
     h2{
         font-size: 1.9rem;
     }
@@ -27,7 +33,6 @@
         width: 15%;
     }
     .forecast-table {
-        
         border: 2px solid var(--secondary);
     }
     .articlepic {

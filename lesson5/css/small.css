@@ -15,7 +15,7 @@ header, footer {
 }
 .pancake-banner {
     background-color: yellow;
-    padding: 20px;
+    padding: 5px;
     display: none;
 }
 
@@ -79,7 +79,7 @@ h1 {
     margin: 0;
 }
 footer {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .hero-div {
     margin: 10px auto;
@@ -98,14 +98,17 @@ footer {
   }
 .weather-summary {
     background-color: rgba(0,0,0,0.6);
-    max-width: 50%;
+    max-width: 90%;
     color: white;
-    position: absolute;
-    top: 50px;
-    left: 200px;
+    margin: 10px auto;
+
 }
 .weather-icon {
     width: 35%;
+}
+.summary-title {
+    padding-top: 15px;
+    margin-bottom: 0px;;
 }
 h3 {
     text-align: center;
