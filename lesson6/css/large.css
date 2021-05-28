@@ -1,8 +1,4 @@
 @media only screen and (min-width: 60em) {
-    main, footer, .motto {
-        width: 90%;
-        margin: auto;
-    }
     h1 {
         font-size: 5rem;
         margin: 0;
@@ -20,23 +16,31 @@
         width: 100px;
     }
     .hero-div {
-        margin: 10px auto;
-        position: relative;
         max-width: 80%;
     }
-    .weather-summary {
-        position: absolute;
-        top: 50px;
-        left: 200px;
-    }
     .hero-photo {
-        margin: 10px auto;
         width: 100%;
-        height: auto;
     }
     .articlepic {
         float: right;
         width: 400px;
         padding: 20px;
+    }
+    .contactbox {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 30px auto 0;
+        padding: 0;
+    }
+    .contact-social {
+        flex: 0 1 auto;
+        order: 2;
+        margin: 30px auto;
+    }
+    .prestonmap {
+        flex: 0 1 30%;
+        order: 1;
+        margin: 0 40px;
     }
 }   

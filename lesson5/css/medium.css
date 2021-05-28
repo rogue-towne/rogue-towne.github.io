@@ -30,5 +30,11 @@
         
         border: 2px solid var(--secondary);
     }
-    
+    .articlepic {
+        width: 80%;
+    }
+    .prestonmap {
+        width: 80%;
+    }
+
 }

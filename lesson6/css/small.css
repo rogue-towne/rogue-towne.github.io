@@ -7,7 +7,7 @@ header, footer {
     background-color:var(--primary);
     font-family: 'Nanum Brush Script', cursive;
 }
-.contentbox {
+.contentbox, .contactbox{
     margin: 30px auto;
     padding: 15px;
     background-color: var(--secondary);
@@ -79,8 +79,20 @@ h1 {
     font-size: 3rem;
     margin: 0;
 }
+h2{
+    margin: 0;
+}
 footer {
     font-size: 1.5rem;
+}
+.hero-div {
+    margin: 10px auto;
+    position: relative;
+}
+.hero-photo {
+    margin: 10px auto;
+    width: 90%;
+    height: auto;
 }
 .weather-summary-grid {
     display: inline-grid;
@@ -92,6 +104,12 @@ footer {
     background-color: rgba(0,0,0,0.6);
     max-width: 50%;
     color: white;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+.weather-icon {
+    width: 35%;
 }
 h3 {
     text-align: center;
@@ -99,4 +117,14 @@ h3 {
 .contacts {
     list-style-type: none;
     padding: 0;
+}
+.articlepic {
+    width: 100%
+}
+.prestonmap {
+   width: 100%;
+   margin-top: 10px;
+}
+h4 {
+    margin: 10px;
 }
