@@ -9,12 +9,8 @@
         display: block;
         flex: 1 1 100%;
     }
-    .logo {
-        width: 150px;
-        height: auto;
-    }
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin: 0;
     }
     footer {
@@ -26,14 +22,32 @@
     .weather-icon {
         width: 15%;
     }
-    .forecast-table {
-        
-        border: 2px solid var(--secondary);
+    .forecast {
+        display: initial;
     }
     .articlepic {
         width: 80%;
     }
     .prestonmap {
         width: 80%;
+    }
+    .hero-div {
+        max-width: 80%;
+    }
+    .forecast-table {
+        border: 2px solid var(--secondary);
+        width: 70%;
+        margin: 30px auto;
+    }
+    .weather-summary {
+        background-color: rgba(0,0,0,0.7);
+        width: 200px;
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
     }
 }
