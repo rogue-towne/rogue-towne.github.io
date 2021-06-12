@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Storm Center for Eastern Idaho">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center</title>
+</head>
+<body>
+    <header>
+        <h1>Forecast <img class= "logo" src="images/ninjalogo.png" alt="Forecast Ninja Logo"> Ninja</h1> 
+        <p class="motto">The most efficient forecast of weather, news, events for Eastern Idaho </p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../lesson3/index.html">Home</a></li>
+            <li><a href="preston-5.html">Preston</a></li>
+            <li><a href="lesson3/index.html">Soda Springs</a></li>
+            <li><a href="lesson3/index.html">Fish Haven</a></li>
+            <li><a class="active" href="lesson3/index.html">Storm Center</a></li>
+            <li><a href="lesson3/index.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Report a Storm</h2>
+        <form>
+            <fieldset>
+                <legend>Your details</legend>
+                    <label>
+                        <div>Full Name*</div>
+                        <input name="name" type=text placeholder="John Doe" required>
+                    </label>
+                    <label>
+                        <div>Email</div>
+                        <input type="email" name="email" placeholder="user@email.org">
+                    </label>
+                    <label>
+                        <div>Phone Number*</div>
+                        <input type="tel" name="phone" placeholder="###-###-####" required>
+                    </label>
+                    <label>
+                        <div>Zipcode*</div>
+                        <input type="text" name="zipcode" placeholder="#####" required>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm details</legend>
+                <label>
+                    <div>Storm date</div>
+                    <input type="date" name="date" required>
+                </label>
+                <label>
+                    <div>Storm type</div>
+                    <input name="browsers" list="stormlist"></label>
+                    <datalist id="stormlist">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label>
+                    <label class="flexly" for="severity">
+                        <div>Storm Severity</div>
+                        <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </label>
+                <label>
+                    <div>Storm Region</div>
+                    <select name="regions" id="selectregion" onchange="selectResponse()">
+                        <option value="" disabled selected>Select a Region ...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>
+                </label>
+                <label>	
+                    <fieldset>
+                        <legend>User in Danger</legend> 
+                        <div class="selection">
+                            <label><input type="radio" name="response" value="yes">Yes</label>
+                        </div>
+                        <div class="selection">
+                            <label><input type="radio" name="response" value="maybe">Maybe</label>
+                        </div>
+                        <div class="selection">
+                            <label><input type="radio" name="response" value="no">No</label>
+                        </div>
+                    </fieldset>
+                </label>
+                <label>
+                    <div>Additional Information</div>
+                    <textarea name="info"></textarea>
+                </label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; Forecast Ninja | Rose Towne | 
+        <span id="date"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Namun Gothic', 'Nanum Brush Script']}
+      });
+      </script>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+</body>
+</html>
