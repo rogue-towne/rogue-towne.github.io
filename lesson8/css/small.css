@@ -145,6 +145,6 @@ form label.top input:required:valid {
 .thanks {
     background-color: var(--secondary);
     padding: 5px;
-    margin: 2rem;
+    margin: 2rem 10rem;
 }
 
