@@ -26,42 +26,26 @@
             <li><a href="../lesson6/preston-6.html">Preston</a></li>
             <li><a href="lesson3/index.html">Soda Springs</a></li>
             <li><a href="lesson3/index.html">Fish Haven</a></li>
-            <li><a class="active" href="lesson3/index.html">Storm Center</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
             <li><a href="lesson3/index.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
         <h2>Report a Storm</h2>
-        <form>
-            <fieldset>
-                <legend>Your details</legend>
-                    <label>
-                        <div>Full Name*</div>
-                        <input name="name" type=text placeholder="John Doe" required>
-                    </label>
-                    <label>
-                        <div>Email</div>
-                        <input type="email" name="email" placeholder="user@email.org">
-                    </label>
-                    <label>
-                        <div>Phone Number*</div>
-                        <input type="tel" name="phone" placeholder="###-###-####" required>
-                    </label>
-                    <label>
-                        <div>Zipcode*</div>
-                        <input type="text" name="zipcode" placeholder="#####" required>
-                    </label>
+        <form action="thanks.html">
+            <fieldset class="user-details">
+                <legend class="user-label"><h3>Your details</h3></legend>
+                    <label class="top">First Name* <input name="fname" type=text placeholder="John" required></label>
+                    <label class="top">Last Name* <input name="lname" type=text placeholder="Doe" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="user@email.org"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" placeholder="###-###-####" required></label>
+                    <label class="top">Zipcode* <input type="text" name="zipcode" placeholder="#####" required></label>
             </fieldset>
-            <fieldset>
-                <legend>Storm details</legend>
-                <label>
-                    <div>Storm date</div>
-                    <input type="date" name="date" required>
-                </label>
-                <label>
-                    <div>Storm type</div>
-                    <input name="browsers" list="stormlist"></label>
+            <fieldset class="storm-details">
+                <legend class="storm-label"><h3>Storm details</h3></legend>
+                <label class="top">Storm date <input type="date" name="date" required></label>
+                <label class="top">Storm type<input name="browsers" list="stormlist"></label>
                     <datalist id="stormlist">
                         <option value="Flash Flood">
                         <option value="Hail">
@@ -69,13 +53,9 @@
                         <option value="Thunderstorm">
                         <option value="Tornado">
                     </datalist>
+                <label class="top" for="severity">Storm Severity <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
                 </label>
-                <label>
-                    <label class="flexly" for="severity">
-                        <div>Storm Severity</div>
-                        <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </label>
                     <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
@@ -89,32 +69,21 @@
                         <option value="9">
                         <option value="10">
                     </datalist>
-                </label>
-                <label>
-                    <div>Storm Region</div>
-                    <select name="regions" id="selectregion" onchange="selectResponse()">
+                <label class="top">Storm Region <select name="regions" id="selectregion" onchange="selectResponse()">
                         <option value="" disabled selected>Select a Region ...</option>
                         <option value="Fish Haven">Fish Haven</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                     </select>
                 </label>
-                <fieldset>
-                    <legend>User in Danger</legend> 
-                        <div class="selection">
-                            <label><input type="radio" name="response" value="yes">Yes</label>
-                        </div>
-                        <div class="selection">
-                            <label><input type="radio" name="response" value="maybe">Maybe</label>
-                        </div>
-                        <div class="selection">
-                            <label><input type="radio" name="response" value="no">No</label>
-                        </div>
+                <label class="top">Am I in danger?</label>
+                <fieldset class="danger">
+                    <label class="sbs"><input type="radio" name="response" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="response" value="maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="response" value="no">No</label>
                 </fieldset>
-                <label>
-                    <div>Additional Information</div>
-                    <textarea name="info"></textarea>
-                </label>
+                <label class="top">Additional Information <textarea name="info" rows=""></textarea></label>
+                <input type="submit" class="sbutton" value="Send Report">
             </fieldset>
         </form>
     </main>
@@ -129,5 +98,6 @@
       </script>
     <script src="js/date.js"></script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

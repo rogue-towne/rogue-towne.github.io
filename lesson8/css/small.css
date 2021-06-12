@@ -69,14 +69,82 @@ h1 {
     font-size: 3rem;
     margin: 0;
 }
-h2{
+h2, h3, h4{
     margin: 0;
 }
 footer {
     font-size: 1.1rem;
     padding: 5px;
 }
-form {
-    background-color: var(--secondary);
+form fieldset {
+    margin: 2rem 1rem;
+    border: 1px solid var(--accent1);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    text-align: left;
+}
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+form label.top input, form label.top select, textarea {
+    display: block;
+    border: 1px solid var(--accent1);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 85%;
+    max-width: 20rem;
+    text-align: left;
+}
+form label.sbs {
+    display: block;
+    padding: .5rem;
+    text-align: left;
+}
+form input.sbutton {
+    border: none;
+    background-color: var(--primary);
+    padding: .75rem 1.5rem;
+    border-radius: 1rem;
+    margin: 2rem 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
     
 }
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+.danger {
+    margin: 0;
+    width: 85%;
+    max-width: 20rem;
+    background-color: white;
+    padding: 0;
+}
+
+.user-details, .storm-details{
+    background-color: var(--secondary);
+}
+.user-label, .storm-label, .danger-label, h4 {
+    background-color: var(--primary);
+    padding: 10px;
+}
+.sbutton {
+    font-weight: bold;
+    background-color: var(--primary);
+}
+.thanks {
+    background-color: var(--secondary);
+    padding: 5px;
+    margin: 2rem;
+}
+

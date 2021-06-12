@@ -12,4 +12,13 @@
     .motto {
         font-size: 1.2rem;
     }
+    form fieldset {
+        margin: 2rem 16rem;
+    }
+    form label.top input, form label.top select, textarea, .danger{
+        max-width: 25rem;
+    }
+    .thanks h1{
+        font-size: 3rem;
+    }
 }   
