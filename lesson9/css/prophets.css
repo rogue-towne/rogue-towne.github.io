@@ -1,0 +1,39 @@
+header, main, footer {
+    max-width: 820px;
+    margin: 0 auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+img {
+    width: 200px;
+}
+body {
+    text-align: center;
+    font-family: 'Vesper Libre', serif;
+}
+h1, h2 {
+    font-family: 'Viaoda Libre', cursive;
+}
+p {
+    margin: 0;
+}
+section {
+    background-color: #99969C;
+    margin: 3px;
+}
+footer {
+    margin-top: 10px;
+    border-top: 1px solid #555
+}
+@media only screen and (min-width : 768px){
+    .cards {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+}
+@media only screen and (min-width : 769px){
+    .cards {
+        grid-template-columns: repeat(3, minmax(240px, 1fr));
+    }
+}
