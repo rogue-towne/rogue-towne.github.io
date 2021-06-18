@@ -13,6 +13,7 @@ header, footer {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 4px
 }
 img {
     width: 200px;
@@ -26,7 +27,6 @@ p {
 }
 section {
     background-color: #99969C;
-    margin: 3px;
 }
 footer {
     margin-top: 10px;
@@ -38,7 +38,10 @@ footer {
     }
 }
 @media only screen and (min-width : 769px){
+    header, main, footer {
+        max-width: 980px;
+    }
     .cards {
-        grid-template-columns: repeat(3, minmax(240px, 1fr));
+        grid-template-columns: repeat(4, minmax(240px, 1fr));
     }
 }
