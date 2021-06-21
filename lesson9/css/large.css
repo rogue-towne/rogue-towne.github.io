@@ -12,14 +12,8 @@
     .motto {
         font-size: 1.2rem;
     }
-    .logo {
-        width: 100px;
-    }
     .hero-div {
         max-width: 80%;
-    }
-    .hero-photo {
-        width: 100%;
     }
     .articlepic {
         float: right;
@@ -45,8 +39,8 @@
     }
     .weather-summary {
         width: 300px;
-        top: 10px;
-        left: 40px;
+        top: 30px;
+        left: 30px;
         font-size: 1.3rem;
     }
 }   
