@@ -1,0 +1,46 @@
+@media only screen and (min-width: 60em) {
+    h1 {
+        font-size: 5rem;
+        margin: 0;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .motto {
+        font-size: 1.2rem;
+    }
+    .hero-div {
+        max-width: 80%;
+    }
+    .articlepic {
+        float: right;
+        width: 400px;
+        padding: 20px;
+    }
+    .contactbox {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 30px auto 0;
+        padding: 0;
+    }
+    .contact-social {
+        flex: 0 1 auto;
+        order: 2;
+        margin: 30px auto;
+    }
+    .prestonmap {
+        flex: 0 1 30%;
+        order: 1;
+        margin: 0 40px;
+    }
+    .weather-summary {
+        width: 300px;
+        top: 30px;
+        left: 30px;
+        font-size: 1.3rem;
+    }
+}   

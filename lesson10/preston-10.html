@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Forescast Ninja home page for Preston, Idaho">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston Idaho Home</title>
+</head>
+<body>
+    <div class="pancake-banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Friday at the city park. </div>
+    <header>
+        <h1>Forecast <img class= "logo" src="images/ninjalogo.png" alt="Forecast Ninja Logo"> Ninja</h1> 
+        <p class="motto">The most efficient forecast of weather, news, events for Eastern Idaho </p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../lesson3/index.html">Home</a></li>
+            <li><a class="active" href="preston-5.html">Preston</a></li>
+            <li><a href="lesson3/index.html">Soda Springs</a></li>
+            <li><a href="lesson3/index.html">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="lesson3/index.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+            <div class="hero-div">
+                <picture class="hero-pic">
+                    <source media= "(max-width: 500px)" srcset="images/hero-500.jpg">
+                    <source media= "(max-width: 800px)" srcset="images/hero-800.jpg">
+                    <img src="images/hero-1165.jpg" alt="Hero Image" />
+                </picture>
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="weather-summary-grid">
+                        <div class="grid-item">Currently:</div>
+                        <div class="grid-item"> Sunny</div>
+                        <div class="grid-item">High:</div>
+                        <div class="grid-item"> <span id="temp">35</span> &deg;F</div>
+                        <div class="grid-item">Wind Chill:</div>
+                        <div class="grid-item"> <span id="chill"></span> </div>
+                        <div class="grid-item">Humidity:</div>
+                        <div class="grid-item"> 69% </div>
+                        <div class="grid-item">Wind Speed: </div>
+                        <div class="grid-item"> <span id="speed">4</span>mph</div>
+                    </div>
+                </section>
+            </div>
+        <div class="forecast">
+            <h3> 5 Day Forecast</h3>
+            <table class="forecast-table">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                <tr>
+                    <td><img class="weather-icon" src="images/partly_cloudy2.png" alt="Partly Cloudy by DigitalShards from the Noun Project"></td>
+                    <td><img class="weather-icon" src="images/partly_cloudy2.png" alt="Partly Cloudy by DigitalShards from the Noun Project"></td>
+                    <td><img class="weather-icon" src="images/partly_cloudy2.png" alt="Partly Cloudy by DigitalShards from the Noun Project"></td>
+                    <td><img class="weather-icon" src="images/sunny2.png" alt="Sunny by Freepik"></td>
+                    <td><img class="weather-icon" src="images/sunny2.png" alt="Sunny by Freepik"></td>
+                </tr>
+                <tr>
+                    <td>62°F</td>
+                    <td>65°F</td>
+                    <td>64°F</td>
+                    <td>67°F</td>
+                    <td>70°F</td>
+                </tr>
+            </table>
+        </div>
+        <section class="contentbox">
+            <img class="articlepic" src="images/articlepic.jpg" alt="Man and wife teaching daughter to ride bike by Agung Pandit Wiguna from Pexels" >
+            <h4>Founders Day Fresco</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatum, impedit facere, harum nemo modi, consequatur ipsa in esse omnis fuga libero corporis blanditiis illum fugit. Ipsa expedita dolor excepturi! Alias nulla minus dolor esse iusto expedita officia nihil officiis rem facere! Praesentium temporibus totam recusandae necessitatibus quod cumque vel debitis nisi, illum facere laborum sint adipisci id omnis quia eveniet dolorum exercitationem? Cumque laboriosam mollitia laborum assumenda, libero debitis quis fuga ad maiores iusto? Necessitatibus, ex in, eum maiores magnam accusantium adipisci aperiam voluptas porro cupiditate totam mollitia tempora nisi, voluptatum nam modi nemo! Error odio, neque harum delectus officiis animi nesciunt officia quae quia eius similique vel maiores ratione eligendi quisquam, itaque illo! Maxime quam nemo eius neque?</p>
+        </section>
+        <div class="contactbox">
+            <div class="contact-social">
+                <ul class="contacts">
+                    <li><h4>Forecast Ninja</h4></li>
+                    <li>67th W 34 St</li>
+                    <li>Preston, ID 83263</li>
+                    <li>999.999.999</li>
+                    <li>forecastninja@ein.com</li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/iconfinder_Rounded_Facebook_svg_5282541.png" alt="Facebook icon link"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/iconfinder_Rounded_Twitter5_svg_5282551.png" alt="Twitter icon link"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/iconfinder_Rounded_Instagram_svg_5282544.png" alt="Instagram icon link"></a>
+                    <a href="https://www.reddit.com/" target="_blank"><img src="images/iconfinder_Rounded_Reddit2_svg_5282547.png" alt="Reddit icon link"></a>    
+                </div>
+            </div>
+            <img class="prestonmap" src="images/prestonmap.png" alt="Map of Preston Idaho">
+        </div>
+    </main>
+    <footer>
+        &copy; Forecast Ninja | Attributions Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> | Rose Towne | 
+        <span id="date"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Namun Gothic', 'Nanum Brush Script']}
+      });
+      </script>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/windChill.js"></script>
+</body>
+</html>
