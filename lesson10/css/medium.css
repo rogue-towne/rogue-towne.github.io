@@ -34,17 +34,29 @@
     .hero-div {
         max-width: 80%;
     }
-    .forecast-table {
-        border: 2px solid var(--secondary);
+    .forecast-table{
         width: 70%;
         margin: 30px auto;
+
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th {
+        background-color: var(--secondary);
+    }
+    th, td {
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
     }
     .weather-summary {
         background-color: rgba(0,0,0,0.7);
-        width: 200px;
+        width: 250px;
         color: white;
         position: absolute;
-        top: 10px;
+        top: 5px;
         left: 20px;
         font-size: 1rem;
         margin: 0;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Forescast Ninja home page for Preston, Idaho">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -17,13 +18,13 @@
 <body>
     <div class="pancake-banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Friday at the city park. </div>
     <header>
-        <h1>Forecast <img class= "logo" src="images/ninjalogo.png" alt="Forecast Ninja Logo"> Ninja</h1> 
-        <p class="motto">The most efficient forecast of weather, news, events for Eastern Idaho </p>
+        <h1>Forecast <img class= "logo" src="images/ninja-100.png" alt="Forecast Ninja Logo">Ninja</h1> 
+        <p class="motto">A forecast of weather, news & events for Eastern Idaho </p>
     </header>
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="../lesson3/index.html">Home</a></li>
+            <li><a href="../lesson9/index.html">Home</a></li>
             <li><a class="active" href="preston-5.html">Preston</a></li>
             <li><a href="lesson3/index.html">Soda Springs</a></li>
             <li><a href="lesson3/index.html">Fish Haven</a></li>
@@ -43,15 +44,19 @@
                     <h3>Weather Summary</h3>
                     <div class="weather-summary-grid">
                         <div class="grid-item">Currently:</div>
-                        <div class="grid-item"> Sunny</div>
+                        <div class="grid-item"> <span id="currently"></span> </div>
+                        <div class="grid-item">Current Temp:</div>
+                        <div class="grid-item"> <span id="current-temp"></span> &deg;F</div>
                         <div class="grid-item">High:</div>
-                        <div class="grid-item"> <span id="temp">35</span> &deg;F</div>
+                        <div class="grid-item"> <span id="high-temp"></span> &deg;F</div>
+                        <div class="grid-item">Low:</div>
+                        <div class="grid-item"> <span id="low-temp"></span> &deg;F</div>
                         <div class="grid-item">Wind Chill:</div>
                         <div class="grid-item"> <span id="chill"></span> </div>
                         <div class="grid-item">Humidity:</div>
-                        <div class="grid-item"> 69% </div>
+                        <div class="grid-item"> <span id="humidity"></span></div>
                         <div class="grid-item">Wind Speed: </div>
-                        <div class="grid-item"> <span id="speed">4</span>mph</div>
+                        <div class="grid-item"> <span id="speed"></span> mph</div>
                     </div>
                 </section>
             </div>
@@ -59,24 +64,24 @@
             <h3> 5 Day Forecast</h3>
             <table class="forecast-table">
                 <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <th><span id="day-1"></span></th>
+                    <th><span id="day-2"></span></th>
+                    <th><span id="day-3"></span></th>
+                    <th><span id="day-4"></span></th>
+                    <th><span id="day-5"></span></th>
                 <tr>
-                    <td><img class="weather-icon" src="images/partly_cloudy2.png" alt="Partly Cloudy by DigitalShards from the Noun Project"></td>
-                    <td><img class="weather-icon" src="images/partly_cloudy2.png" alt="Partly Cloudy by DigitalShards from the Noun Project"></td>
-                    <td><img class="weather-icon" src="images/partly_cloudy2.png" alt="Partly Cloudy by DigitalShards from the Noun Project"></td>
-                    <td><img class="weather-icon" src="images/sunny2.png" alt="Sunny by Freepik"></td>
-                    <td><img class="weather-icon" src="images/sunny2.png" alt="Sunny by Freepik"></td>
+                    <td><span id="day-1-icon"></span> &nbsp; <img src="" alt="" id="icon-1"></td>
+                    <td><span id="day-2-icon"></span> &nbsp; <img src="" alt="" id="icon-2"></td>
+                    <td><span id="day-3-icon"></span> &nbsp; <img src="" alt="" id="icon-3"></td>
+                    <td><span id="day-4-icon"></span> &nbsp; <img src="" alt="" id="icon-4"></td>
+                    <td><span id="day-5-icon"></span> &nbsp; <img src="" alt="" id="icon-5"></td>
                 </tr>
                 <tr>
-                    <td>62°F</td>
-                    <td>65°F</td>
-                    <td>64°F</td>
-                    <td>67°F</td>
-                    <td>70°F</td>
+                    <td><span id="day-1-temp"></span> &deg;F</td>
+                    <td><span id="day-2-temp"></span> &deg;F</td>
+                    <td><span id="day-3-temp"></span> &deg;F</td>
+                    <td><span id="day-4-temp"></span> &deg;F</td>
+                    <td><span id="day-5-temp"></span> &deg;F</td>
                 </tr>
             </table>
         </div>
@@ -105,7 +110,7 @@
         </div>
     </main>
     <footer>
-        &copy; Forecast Ninja | Attributions Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> | Rose Towne | 
+        &copy; Forecast Ninja | Attributions: Weather data & icons from <a href="https://openweathermap.org/" title="OpenWeatherMap">OpenWeatherMap</a> | Rose Towne | 
         <span id="date"></span>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -115,6 +120,6 @@
       </script>
     <script src="js/date.js"></script>
     <script src="js/toggleMenu.js"></script>
-    <script src="js/windChill.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

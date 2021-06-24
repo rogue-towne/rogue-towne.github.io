@@ -1,10 +1,10 @@
 :root {
-    --primary:#A9E21C;
+    --primary:#C5E8E7;
     --secondary: #5ABCB9;
     --accent1: #011627;
 }
-header, footer {
-    background-color:var(--primary);
+header {
+    background-color:var(--secondary);
     font-family: 'Nanum Brush Script', cursive;
 }
 .contentbox, .contactbox, .weather-summary{
@@ -27,10 +27,12 @@ body {
     margin: auto;
     text-align: center;
     font-size: 1.2rem;
+    background-color: var(--primary);
 }
 .navigation{
     padding: 0;
     margin-top: 0px;
+    background-color: var(--primary);
 }
 .navigation li:first-child{
     display: block;
@@ -58,8 +60,8 @@ nav {
     background-color: var(--secondary);
 }
 .active {
-    border-bottom: 6px solid var(--secondary);
-    background-color: var(--primary);
+    border-bottom: 6px solid var(--primary);
+    background-color: var(--secondary);
 }
 a {
     text-decoration: none;
@@ -84,6 +86,7 @@ h2{
 footer {
     font-size: 1.1rem;
     padding: 5px;
+    font-family: 'Nanum Brush Script', cursive;
 }
 .hero-div {
     margin: 10px auto;
@@ -122,4 +125,7 @@ main picture.hero-pic img{
 }
 h4 {
     margin: 10px;
+}
+#currently {
+    text-transform: capitalize;
 }
