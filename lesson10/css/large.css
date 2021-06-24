@@ -38,9 +38,9 @@
         margin: 0 40px;
     }
     .weather-summary {
-        width: 300px;
-        top: 30px;
-        left: 30px;
+        width: 350px;
+        top: 40px;
+        left: 40px;
         font-size: 1.3rem;
     }
 }   
