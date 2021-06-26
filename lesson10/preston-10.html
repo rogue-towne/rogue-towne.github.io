@@ -16,22 +16,28 @@
     <title>Preston Idaho Home</title>
 </head>
 <body>
-    <div class="pancake-banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Friday at the city park. </div>
-    <header>
-        <h1>Forecast <img class= "logo" src="images/ninja-100.png" alt="Forecast Ninja Logo">Ninja</h1> 
-        <p class="motto">A forecast of weather, news & events for Eastern Idaho </p>
+    <header class="nav-bar">
+        <a class="website-logo" href="../lesson9/index.html">
+            <img class="logo" src="images/ninja-100.png" alt="Forecast Ninja Logo">
+            <h1 class="website-title">Forecast Ninja</h1> 
+        </a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li><a class="active" href="preston-10.html">Preston</a></li>
+                <li><a href="lesson3/index.html">Soda Springs</a></li>
+                <li><a href="lesson3/index.html">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="lesson3/index.html">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="../lesson9/index.html">Home</a></li>
-            <li><a class="active" href="preston-5.html">Preston</a></li>
-            <li><a href="lesson3/index.html">Soda Springs</a></li>
-            <li><a href="lesson3/index.html">Fish Haven</a></li>
-            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="lesson3/index.html">Gallery</a></li>
-        </ul>
-    </nav>
+    <div class="pancake-banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park. </div>
     <main>
         <h2>Preston Idaho</h2>
             <div class="hero-div">
@@ -45,7 +51,6 @@
                     <div class="weather-summary-grid">
                         <div class="grid-item">Currently:</div>
                         <div class="grid-item"> <span id="currently"></span> <span id="current-temp"></span> &deg;F</div>
-                       
                         <div class="grid-item">High:</div>
                         <div class="grid-item"> <span id="high-temp"></span> &deg;F</div>
                         <div class="grid-item">Low:</div>

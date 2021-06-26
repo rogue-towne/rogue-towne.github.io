@@ -1,15 +1,14 @@
-* {
-    box-sizing: border-box;
-}
 :root {
     --primary:#C5E8E7;
-     --secondary: #5ABCB9;
+    --secondary: #5ABCB9;
     --accent1: #011627;
+}
+* {
+    box-sizing: border-box;
 }
 body {
     color: var(--dark);
     font-family: 'Nanum Gothic', sans-serif;
-    background-color: var(--primary);
     margin: 0;
     padding: 0;
 }
@@ -21,58 +20,46 @@ body {
 header{
     font-family: 'Nanum Brush Script', cursive;
 }
-.nav-bar {
-    display: flex;
-    background-color: var(--secondary);
-    flex-direction: column;
-}
-.website-logo {
-    display: flex;
-    margin: .2rem;
-    align-items: center;
-    height: 70px;
-    text-decoration: none;
-    color: var(--accent1);
-}
 .logo {
-    height: 100%;
+    
+
 }
-.website-title {
-    font-size: 3rem;
+.nav-bar {
+    height: 50px;
+    width: 100%;
+    background-color:var(--secondary);
+    color: var(--accent1);
+    position:relative;
 }
-.navbar-links ul {
+.navbar-links{
+    display: none;
+    flex-direction: column;
+    width:100%;
+}
+.navbar-links ul{
     margin: 0;
     padding: 0;
-    display: flex;
     width: 100%;
     flex-direction: column;
 }
 .navbar-links li {
     list-style: none;
-    text-align: center;
-    background-color: var(--primary);
 }
 .navbar-links li a{
-    font-size: 2rem;
     text-decoration: none;
     color: var(--accent1);
-    padding: .5rem;
+    padding: .5rem 1rem;
     display: block;
 }
-.navbar-links{
-    display: none;
-    width: 100%;
-}
-.navbar-links.toggle {
-    display: flex;
-}
 .navbar-links li:hover {
-    background-color: #3f8582a4;
+    background-color: var(--primary);
+}
+.navbar-links.active {
+    display: flex;
 }
 .toggle-button{
     position: absolute;
     right: 1rem;
-    top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,6 +72,7 @@ header{
     background-color: var(--accent1);
     border-radius: 10px;
 }
+
 h2{
     margin: 0;
 }
@@ -110,10 +98,4 @@ footer {
     font-size: 1.1rem;
     padding: 5px;
     font-family: 'Nanum Brush Script', cursive;
-}
-
-.navbar-links li a.active {
-    color: white;
-    background-color: var(--accent1);
-    border-radius: 10px;
 }

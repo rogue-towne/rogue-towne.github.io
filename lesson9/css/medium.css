@@ -1,14 +1,4 @@
 @media only screen and (min-width: 32.5em) {
-    .navigation {
-        display: flex;
-    }
-    .navigation li:first-child {
-        display: none;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
     h1 {
         font-size: 4rem;
         margin: 0;
@@ -18,12 +8,6 @@
     }
     h2{
         font-size: 1.9rem;
-    }
-    .weather-icon {
-        width: 15%;
-    }
-    .forecast {
-        display: initial;
     }
     .articlepic {
         width: 80%;

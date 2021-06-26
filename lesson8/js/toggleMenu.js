@@ -1,3 +1,6 @@
-function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('toggle')
+})
