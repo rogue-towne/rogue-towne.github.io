@@ -75,9 +75,6 @@ hr {
     box-shadow: 0 0 2px 1px #35393C;
 }
 @media screen and (max-width: 550px) { 
-    header{
-        /* text-align: center; */
-    }
     img {
         width: 250px;
         float: none;
