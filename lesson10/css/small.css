@@ -93,7 +93,6 @@ header{
 body {
     color: var(--dark);
     font-family: 'Nanum Gothic', sans-serif;
-    margin: auto;
     text-align: center;
     font-size: 1.2rem;
     background-color: var(--primary);
