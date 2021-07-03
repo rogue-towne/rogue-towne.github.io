@@ -4,4 +4,4 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const 
+    const }
