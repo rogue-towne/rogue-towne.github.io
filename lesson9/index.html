@@ -32,12 +32,12 @@
             </a>
             <nav class="navbar-links">
                 <ul>
-                    <li class="active"><a href="lesson9/index.html">Home</a></li>
-                    <li><a href="preston.html">Preston</a></li>
-                    <li><a href="sodasprings.html">Soda Springs</a></li>
-                    <li><a href="fishhaven.html">Fish Haven</a></li>
-                    <li><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="../lesson11/preston.html">Preston</a></li>
+                    <li><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+                    <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+                    <li><a href="../lesson7/gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,11 +66,11 @@
             <section class="city-card">
                 <div class="city-info">
                     <h3>Preston</h3>
-                    <p class="town-motto"><i>Home of Napolean Dynamite.</i></p>
+                    <p class="town-motto"><i><span id="preston-motto"></span></i></p>
                     <div>
-                        <p>Year Founded: 1866</p>
-                        <p>Population: 5204</p>
-                        <p>Annual Rain Fall: 16.65</p>  
+                        <p>Year Founded: <span id="preston-year"></span></p>
+                        <p>Population: <span id="preston-pop"></span></p>
+                        <p>Annual Rain Fall: <span id="preston-rain"></span></p>  
                     </div>
                 </div>
                 <div class="city-pic-box"> 
@@ -80,11 +80,11 @@
             <section class="city-card">
                 <div class="city-info fishhaven">
                     <h3>Fish Haven</h3>
-                    <p class="town-motto"><i>This is Fish Haven.</i></p>
+                    <p class="town-motto"><i><span id="fishhaven-motto"></span></i></p>
                     <div>
-                        <p>Year Founded: 1864</p>
-                        <p>Population: 501</p>
-                        <p>Annual Rain Fall: 14.2</p> 
+                        <p>Year Founded: <span id="fishhaven-year"></span></p>
+                        <p>Population: <span id="fishhaven-pop"></span></p>
+                        <p>Annual Rain Fall: <span id="fishhaven-rain"></span></p> 
                     </div>
  
                 </div>
@@ -96,11 +96,11 @@
             <section class="city-card">
                 <div class="city-info">
                     <h3>Soda Springs</h3>
-                    <p class="town-motto sodasprings"><i>Historic Oregan Trail Oasis.The Soda is on us.</i></p>
+                    <p class="town-motto sodasprings"><i><span id="sodaspring-motto"></span></i></p>
                     <div>
-                        <p>Year Founded: 1858</p>
-                        <p>Population: 2985</p>
-                        <p>Annual Rain Fall: 15.75</p>
+                        <p>Year Founded: <span id="sodaspring-year"></span></p>
+                        <p>Population: <span id="sodaspring-pop"></span></p>
+                        <p>Annual Rain Fall: <span id="sodaspring-rain"></span></p>
                     </div>
 
                 </div>
@@ -148,5 +148,6 @@
     </script>
     <script src="js/date.js"></script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/townData.js"></script>
 </body>
 </html>

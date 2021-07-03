@@ -1,0 +1,97 @@
+@media only screen and (min-width: 70em) {
+    .website-title {
+        font-size: 4rem;
+    }
+    .website-logo {
+        margin: .5rem;
+
+    }
+    .nav-bar {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .navbar-links ul {
+        flex-direction: row;
+    }
+    .navbar-links{
+        display: flex;
+        width: auto;
+        margin-right: .5rem;
+    }
+    .navbar-links li {
+        margin: .6rem;
+        border-radius: 10px;
+    }
+    .toggle-button{
+        display: none;
+    }
+    .home-overlay {
+        left: 46px;
+        top: 41px;
+        right: 126.967px;
+        font-size: 4rem;
+    }
+    .instant {
+        font-size: 4rem;
+    }
+    .weather {
+        font-size: 4.5rem;
+        font-weight: 100;
+    }
+    .updates {
+        font-size: 3.5rem;
+    }
+    .for {
+        font-size: 3rem;
+    }
+    .your {
+        font-size: 4.5rem;
+        color: var(--secondary);
+    }
+    .idaho, .town {
+        font-size: 3.5rem;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
+    .hero-div {
+        max-width: 80%;
+    }
+    .articlepic {
+        float: right;
+        width: 400px;
+        padding: 20px;
+    }
+    .city-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        justify-items: center;
+    }
+    .city-pic {
+        margin: 0px 0px 10px;
+    }
+    .city-card img{
+        margin-bottom: 20px;
+    }
+    .city-card{
+        display: block;
+        width: 400px;
+    }
+    .city-pic-box {
+        width: 300px;
+        margin: auto;
+    }
+    .city-info {
+        margin: auto;
+    }
+    .contentbox {
+        height: 350px;
+    }
+    .contacts li {
+        font-size: 1.3rem;
+    }
+
+}   
