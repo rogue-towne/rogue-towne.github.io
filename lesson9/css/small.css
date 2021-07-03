@@ -39,9 +39,10 @@ header {
 }
 .website-title {
     font-size: 2.8rem;
-    margin-left: -40px;
 }
 .motto {
+    display: none;
+    font-size: 1.2rem;
     margin: -7px 0px 0px -20px;
  }
 .navbar-links ul {
@@ -208,7 +209,7 @@ h4 {
     color:var(--secondary);
     padding: 0px 5px;
 }
-h2 {
+.heading-city-cards {
     font-size: 4rem;
     font-family: 'Nanum Brush Script', cursive;
     margin: 20px;
