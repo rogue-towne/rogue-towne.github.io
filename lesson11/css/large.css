@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
     .website-title {
         font-size: 4rem;
     }
@@ -54,13 +54,21 @@
     footer {
         font-size: 1.5rem;
     }
-    .hero-div {
-        max-width: 80%;
-    }
     .articlepic {
         float: right;
         width: 400px;
         padding: 20px;
+    }
+    .weather-summary {
+        width: 350px;
+        top: 40px;
+        left: 40px;
+    }
+    form fieldset {
+        margin: 2rem 16rem;
+    }
+    form label.top input, form label.top select, textarea, .danger{
+        max-width: 25rem;
     }
     .city-grid {
         display: grid;

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Forescast Ninja home page for Preston, Idaho">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Fish Haven Home</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <a class="website-logo" href="index.html">
+            <img class="logo" src="images/ninja-100.png" alt="Forecast Ninja Logo">
+            <div>
+                <h1 class="website-title">Forecast Ninja</h1> 
+                <h4 class="motto">Bringing East Idaho the latest in weather & news</h4>
+            </div>
+        </a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main onload="sendURL('sodasprings')">
+        <h2 class="city-title">Fish Haven</h2>
+            <div class="hero-div">
+                <picture class="hero-pic">
+                    <source media= "(max-width: 500px)" srcset="images/fishhaven-hero-460.jpg">
+                    <source media= "(max-width: 800px)" srcset="images/fishhaven-hero-800.jpg">
+                    <img src="images/fishhaven-hero-1165.jpg" alt="Hero Image" />
+                </picture>
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="weather-summary-grid">
+                        <div class="grid-item">Currently:</div>
+                        <div class="grid-item"> <span id="currently"></span> <span id="current-temp"></span> &deg;F</div>
+                        <div class="grid-item">High:</div>
+                        <div class="grid-item"> <span id="high-temp"></span> &deg;F</div>
+                        <div class="grid-item">Low:</div>
+                        <div class="grid-item"> <span id="low-temp"></span> &deg;F</div>
+                        <div class="grid-item">Wind Chill:</div>
+                        <div class="grid-item"> <span id="chill"></span> </div>
+                        <div class="grid-item">Humidity:</div>
+                        <div class="grid-item"> <span id="humidity"></span></div>
+                        <div class="grid-item">Wind Speed: </div>
+                        <div class="grid-item"> <span id="speed"></span> mph</div>
+                    </div>
+                </section>
+            </div>
+        <div class="forecast">
+            <h2> 5 Day Forecast</h2>
+            <table class="forecast-table">
+                <tr>
+                    <th><span id="day-1"></span></th>
+                    <th><span id="day-2"></span></th>
+                    <th><span id="day-3"></span></th>
+                    <th><span id="day-4"></span></th>
+                    <th><span id="day-5"></span></th>
+                <tr>
+                    <td><span id="day-1-icon"></span> &nbsp; <img src="" alt="" id="icon-1"></td>
+                    <td><span id="day-2-icon"></span> &nbsp; <img src="" alt="" id="icon-2"></td>
+                    <td><span id="day-3-icon"></span> &nbsp; <img src="" alt="" id="icon-3"></td>
+                    <td><span id="day-4-icon"></span> &nbsp; <img src="" alt="" id="icon-4"></td>
+                    <td><span id="day-5-icon"></span> &nbsp; <img src="" alt="" id="icon-5"></td>
+                </tr>
+                <tr>
+                    <td><span id="day-1-temp"></span> &deg;F</td>
+                    <td><span id="day-2-temp"></span> &deg;F</td>
+                    <td><span id="day-3-temp"></span> &deg;F</td>
+                    <td><span id="day-4-temp"></span> &deg;F</td>
+                    <td><span id="day-5-temp"></span> &deg;F</td>
+                </tr>
+            </table>
+        </div>
+        <section class="contentbox">
+            <img class="articlepic" src="images/fishhaven-article-500.jpg" alt="Father and Son fishing" >
+            <h3>The Fish Are Biting</h3>
+            <p>"It wasn't hard to get a pole but it was hard to catch a fish." -Fish Haven Local. The past year somwthing was in the water and the temperatures were off. There was a problem with the fish and people weren't having success. "I would talk to my friends and they were trying everything. Worms, goo, pizza, crickets, bread, whatever they could think of. But the fish just weren't biting. Some of us evern joked that the fish got Covid too!" -Sam Joe, local High School Fishing Addict. After so much time and fears that the fish were disappearing due to weather conditions, suprisingly over the last month there has been a major influx of fish being caught and fishers are having a lot of succes in the lake. The fish are biting, so come to the lake for an afternoon and go fishing!</p>
+        </section>
+        <div class="contactbox">
+            <div class="contact-social">
+                <ul class="contacts">
+                    <li><h4>Forecast Ninja</h4></li>
+                    <li>67th W 34 St</li>
+                    <li>Preston, ID 83263</li>
+                    <li>999.999.999</li>
+                    <li>forecastninja@ein.com</li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/iconfinder_Rounded_Facebook_svg_5282541.png" alt="Facebook icon link"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/iconfinder_Rounded_Twitter5_svg_5282551.png" alt="Twitter icon link"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/iconfinder_Rounded_Instagram_svg_5282544.png" alt="Instagram icon link"></a>
+                    <a href="https://www.reddit.com/" target="_blank"><img src="images/iconfinder_Rounded_Reddit2_svg_5282547.png" alt="Reddit icon link"></a>    
+                </div>
+            </div>
+            <div class="hq-div">
+                <img class="hq-map" src="images/prestonmap.png" alt="Map of Preston Idaho">
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        &copy; Forecast Ninja |<a href="../index.html">Rose Towne</a> | Weather data source: <a href="https://openweathermap.org/" title="OpenWeatherMap">OpenWeatherMap</a> | 
+        <span id="date"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Namun Gothic', 'Nanum Brush Script']}
+      });
+      </script>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/fishHavenWeather.js"></script>
+</body>
+</html>

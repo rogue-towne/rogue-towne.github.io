@@ -3,9 +3,9 @@
         font-size: 4rem;
         margin-left: 0px;
     }
-    h1 {
-        font-size: 4rem;
-        margin: 0;
+    h2 {
+        margin: 30px auto;
+        width: 90%;
     }
     .motto {
         margin: -20px 0px 0px -60px;
@@ -13,18 +13,33 @@
     footer {
         font-size: 1.7rem;
     }
-    h2 {
-        margin: 30px auto;
-        width: 90%;
+    .weather-icon {
+        width: 15%;
+    }
+    .forecast {
+        display: initial;
     }
     .articlepic {
         width: 80%;
     }
-    .prestonmap {
-        width: 80%;
-    }
     .hero-div {
         max-width: 80%;
+    }
+    .forecast-table{
+        width: 70%;
+        margin: 30px auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th {
+        background-color: var(--secondary);
+    }
+    th, td {
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
     }
     .weather-summary {
         background-color: rgba(0,0,0,0.7);
@@ -64,6 +79,12 @@
     }
     .hq-map {
         width: 100%;
+    }
+    form fieldset {
+        margin: 2rem 5rem;
+    }
+    form label.top input, form label.top select, textarea, .danger{
+        max-width: 25rem;
     }
     .city-grid {
         display: block

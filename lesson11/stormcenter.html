@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Storm Center for Eastern Idaho">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <a class="website-logo" href="index.html">
+            <img class="logo" src="images/ninja-100.png" alt="Forecast Ninja Logo">
+            <div>
+                <h1 class="website-title">Forecast Ninja</h1> 
+                <h4 class="motto">Bringing East Idaho the latest in weather & news</h4>
+            </div>
+        </a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a  href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="city-title">Report a Storm</h2>
+        <form action="thanks.html">
+            <fieldset class="user-details">
+                <legend class="user-label"><h3>Your details</h3></legend>
+                    <label class="top">First Name* <input name="fname" type=text placeholder="John" required></label>
+                    <label class="top">Last Name* <input name="lname" type=text placeholder="Doe" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="user@email.org"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" placeholder="###-###-####" required></label>
+                    <label class="top">Zipcode* <input type="text" name="zipcode" placeholder="#####" required></label>
+            </fieldset>
+            <fieldset class="storm-details">
+                <legend class="storm-label"><h3>Storm details</h3></legend>
+                <label class="top">Storm date <input type="date" name="date" required></label>
+                <label class="top">Storm type<input name="browsers" list="stormlist"></label>
+                    <datalist id="stormlist">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                <label class="top" for="severity">Storm Severity <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                <label class="top">Storm Region <select name="regions" id="selectregion" onchange="selectResponse()">
+                        <option value="" disabled selected>Select a Region ...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>
+                </label>
+                <label class="top">Am I in danger?</label>
+                <fieldset class="danger">
+                    <label class="sbs"><input type="radio" name="response" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="response" value="maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="response" value="no">No</label>
+                </fieldset>
+                <label class="top">Additional Information <textarea name="info" rows=""></textarea></label>
+                <input type="submit" class="sbutton" value="Send Report">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; Forecast Ninja | <a href="../index.html">Rose Towne</a> | 
+        <span id="date"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Namun Gothic', 'Nanum Brush Script']}
+      });
+      </script>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

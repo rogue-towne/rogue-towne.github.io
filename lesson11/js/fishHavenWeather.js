@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=ffe8fd08fbf90ef22ca04d78481b8036"
+const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=ffe8fd08fbf90ef22ca04d78481b8036"
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -23,7 +23,7 @@ function caclulateWindChill(temp, speed){
     let chill = 35.74 + (0.6215 * temp) - (37.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * (Math.pow(speed, 0.16)))  
     return Math.round(chill)
 }
-const forecastApiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=ffe8fd08fbf90ef22ca04d78481b8036"
+const forecastApiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=ffe8fd08fbf90ef22ca04d78481b8036"
 fetch(forecastApiURL)
   .then((response) => response.json())
   .then((jsObject) => {

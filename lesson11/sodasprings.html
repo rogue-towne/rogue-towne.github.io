@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Forescast Ninja home page for Soda Springs, Idaho">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Soda Springs Home</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <a class="website-logo" href="index.html">
+            <img class="logo" src="images/ninja-100.png" alt="Forecast Ninja Logo">
+            <div>
+                <h1 class="website-title">Forecast Ninja</h1> 
+                <h4 class="motto">Bringing East Idaho the latest in weather & news</h4>
+            </div>
+        </a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="preston.html">Preston</a></li>
+                <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main onload="sendURL('sodasprings')">
+        <h2 class="city-title">Soda Springs</h2>
+            <div class="hero-div">
+                <picture class="hero-pic">
+                    <source media= "(max-width: 500px)" srcset="images/soda-springs-1768623_640.jpg">
+                    <source media= "(max-width: 800px)" srcset="images/soda-hero-800.jpg">
+                    <img src="images/soda-hero-1215.jpg" alt="Hero Image" />
+                </picture>
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="weather-summary-grid">
+                        <div class="grid-item">Currently:</div>
+                        <div class="grid-item"> <span id="currently"></span> <span id="current-temp"></span> &deg;F</div>
+                        <div class="grid-item">High:</div>
+                        <div class="grid-item"> <span id="high-temp"></span> &deg;F</div>
+                        <div class="grid-item">Low:</div>
+                        <div class="grid-item"> <span id="low-temp"></span> &deg;F</div>
+                        <div class="grid-item">Wind Chill:</div>
+                        <div class="grid-item"> <span id="chill"></span> </div>
+                        <div class="grid-item">Humidity:</div>
+                        <div class="grid-item"> <span id="humidity"></span></div>
+                        <div class="grid-item">Wind Speed: </div>
+                        <div class="grid-item"> <span id="speed"></span> mph</div>
+                    </div>
+                </section>
+            </div>
+        <div class="forecast">
+            <h2> 5 Day Forecast</h2>
+            <table class="forecast-table">
+                <tr>
+                    <th><span id="day-1"></span></th>
+                    <th><span id="day-2"></span></th>
+                    <th><span id="day-3"></span></th>
+                    <th><span id="day-4"></span></th>
+                    <th><span id="day-5"></span></th>
+                <tr>
+                    <td><span id="day-1-icon"></span> &nbsp; <img src="" alt="" id="icon-1"></td>
+                    <td><span id="day-2-icon"></span> &nbsp; <img src="" alt="" id="icon-2"></td>
+                    <td><span id="day-3-icon"></span> &nbsp; <img src="" alt="" id="icon-3"></td>
+                    <td><span id="day-4-icon"></span> &nbsp; <img src="" alt="" id="icon-4"></td>
+                    <td><span id="day-5-icon"></span> &nbsp; <img src="" alt="" id="icon-5"></td>
+                </tr>
+                <tr>
+                    <td><span id="day-1-temp"></span> &deg;F</td>
+                    <td><span id="day-2-temp"></span> &deg;F</td>
+                    <td><span id="day-3-temp"></span> &deg;F</td>
+                    <td><span id="day-4-temp"></span> &deg;F</td>
+                    <td><span id="day-5-temp"></span> &deg;F</td>
+                </tr>
+            </table>
+        </div>
+        <section class="contentbox">
+            <img class="articlepic" src="images/soda-article-500.jpg" alt="A box of produce at a market from Unsplash by NeONBRAND">
+            <h3>Farmer's Market</h3>
+            <p>The annual Farmer's Market in August is coming up and produce will be sold by local sellers who will be joining from around the community. For 60 years this market has been going on and is a tradition in Soda Springs that has lived on despite past droughts. The community has always stepped up and supported the local growers and we want invite the whole community to join in this year. You can buy world-famous Idaho Potatoes!! After dealing with COVID-19 this last year, there were worries that the event couldn't take place as it attracts community members from all across Idaho but we're so happy to announce that the event will go on as planned and no masks will be required due to the small amount of current cases. We will be posting shortly the sellers and more specifically what products are expeected to be sold shortly. Obviously a wide choice of produce, organically grown will be sold along with local delicacies from small local businesses. A list of businesses will be announced shortly so check back soon to find out who will be there! </p>
+        </section>
+        <div class="contactbox">
+            <div class="contact-social">
+                <ul class="contacts">
+                    <li><h4>Forecast Ninja</h4></li>
+                    <li>67th W 34 St</li>
+                    <li>Preston, ID 83263</li>
+                    <li>999.999.999</li>
+                    <li>forecastninja@ein.com</li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/iconfinder_Rounded_Facebook_svg_5282541.png" alt="Facebook icon link"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/iconfinder_Rounded_Twitter5_svg_5282551.png" alt="Twitter icon link"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/iconfinder_Rounded_Instagram_svg_5282544.png" alt="Instagram icon link"></a>
+                    <a href="https://www.reddit.com/" target="_blank"><img src="images/iconfinder_Rounded_Reddit2_svg_5282547.png" alt="Reddit icon link"></a>    
+                </div>
+            </div>
+            <div class="hq-div">
+                <img class="hq-map" src="images/prestonmap.png" alt="Forecast Ninja Headquarters">
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        &copy; Forecast Ninja | <a href="../index.html">Rose Towne</a> | Weather data source: <a href="https://openweathermap.org/" title="OpenWeatherMap">OpenWeatherMap</a> |
+        <span id="date"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ['Namun Gothic', 'Nanum Brush Script']}
+      });
+      </script>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/sodaSpringWeather.js"></script>
+</body>
+</html>

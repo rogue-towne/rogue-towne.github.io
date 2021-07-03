@@ -3,23 +3,25 @@
     --secondary: #5ABCB9;
     --accent1: #011627;
 }
-html {
-    font-size: 16px;
-}
 * {
     box-sizing: border-box;
 }
 header {
     font-family: 'Nanum Brush Script', cursive;
 }
-.city-title {
-    margin-top: 5px;
-}
-.contentbox, .contactbox, .weather-summary, .city-grid{
+.contentbox, .contactbox, .weather-summary{
     margin: 30px auto;
     padding: 15px;
     background-color: var(--secondary);
-    width: 90%;
+    width: 70%;
+}
+.pancake-banner {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+}
+header{
+    font-family: 'Nanum Brush Script', cursive;
 }
 .nav-bar {
     display: flex;
@@ -38,12 +40,8 @@ header {
     height: 100%;
 }
 .website-title {
-    font-size: 2.8rem;
-    margin-left: -40px;
+    font-size: 3rem;
 }
-.motto {
-    margin: -7px 0px 0px -20px;
- }
 .navbar-links ul {
     margin: 0;
     padding: 0;
@@ -53,15 +51,15 @@ header {
 }
 .navbar-links li {
     list-style: none;
-    align-items: center;
+    text-align: center;
     background-color: var(--primary);
 }
 .navbar-links li a{
+    font-size: 2rem;
     text-decoration: none;
     color: var(--accent1);
     padding: .5rem;
     display: block;
-    font-size: 2rem;
 }
 .navbar-links{
     display: none;
@@ -89,32 +87,36 @@ header {
     background-color: var(--accent1);
     border-radius: 10px;
 }
+.forecast {
+    display: none;
+}
 body {
     color: var(--dark);
     font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
+    font-size: 1.2rem;
     background-color: var(--primary);
     margin: 0;
     padding: 0;
 }
 
-h1{
+.motto {
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h1 {
+    font-size: 3rem;
     margin: 0;
-    font-family:'Nanum Brush Script', cursive;
+}
+h2{
+    margin: 0;
 }
 footer {
     font-size: 1.1rem;
     padding: 5px;
     font-family: 'Nanum Brush Script', cursive;
-    background-color: var(--secondary);
-    margin-top: 30px;
-}
-footer a {
-    text-decoration: none;
-    color: var(--accent1);
-}
-footer a:hover{
-    color: var(--primary)
 }
 .hero-div {
     margin: 10px auto;
@@ -125,42 +127,19 @@ footer a:hover{
     width: 100%;
     margin: 0;
 }
-.home-overlay {
-    color: white;
-    position: absolute;
-    background-color: rgba(0,0,0,0.8);
-    top: 30px;
-    left: 170px;
-    font-size: 2rem;
-}
-.home-overlay p{
-    margin: 10px;
-}
-.instant {
-    font-size: 2rem;
-    color: var(--secondary);
-}
-.weather {
-    font-size: 2.5rem;
-    font-weight: 100;
-}
-.updates {
-    font-size: 1.5rem;
-}
-.for {
-    font-size: 1rem;
-}
-.your {
-    font-size: 2.5rem;
-    color: var(--secondary);
-}
-.idaho, .town {
-    font-size: 1.5rem;
-}
 main picture.hero-pic img{
     width:100%;
 }
-h3 {
+.weather-summary-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    grid-gap: 10px;
+}
+.weather-icon {
+    width: 35%;
+}
+.weather-summary h3 {
     margin-bottom: 5px;
 }
 .contacts {
@@ -170,59 +149,18 @@ h3 {
 .articlepic {
     width: 100%
 }
-.contacts li h4 {
-    font-size: 1.5rem;
+.prestonmap {
+   width: 100%;
+   margin-top: 10px;
 }
 h4 {
     margin: 10px;
 }
-.hq-div {
-    padding-top: 10px;
+#currently {
+    text-transform: capitalize;
 }
-.hq-map {
-    width: 100%;
-}
-
-.navbar-links li.active, .navbar-links li.active a  {
+.navbar-links li a.active {
     color: white;
     background-color: var(--accent1);
     border-radius: 10px;
-}
-
-.city-card {
-    background-color: var(--accent1);
-    color: white;
-    margin-bottom: 20px;
-}
-.city-pic-box {
-    width: 300px;
-    margin: auto;
-}
-.city-pic {
-    width: 100%;
-    margin-bottom: 10px;
-}
-.town-motto{
-    font-weight: bold;
-    margin: -5px 0px 10px;
-    color:var(--secondary);
-    padding: 0px 5px;
-}
-h2 {
-    font-size: 4rem;
-    font-family: 'Nanum Brush Script', cursive;
-    margin: 20px;
-    background-color: var(--secondary)
-}
-h3 {
-    font-family: 'Nanum Brush Script', cursive;
-    font-size: 3rem;
-    margin: 0px;
-    text-shadow: 2px 2px var(--secondary);
-}
-.city-info div {
-    margin-top: 30px;
-}
-p {
-    font-size: 1.2rem;
 }
