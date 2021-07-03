@@ -33,6 +33,7 @@ header {
     height: 70px;
     text-decoration: none;
     color: var(--accent1);
+    width: fit-content;
 }
 .logo {
     height: 100%;
