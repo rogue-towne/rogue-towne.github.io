@@ -9,7 +9,6 @@ body {
 header, footer {
     background-color: #DDE0BD;
 }
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

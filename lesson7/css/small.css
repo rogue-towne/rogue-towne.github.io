@@ -12,9 +12,6 @@ html {
 header {
     font-family: 'Nanum Brush Script', cursive;
 }
-.city-title {
-    margin-top: 5px;
-}
 .contentbox, .contactbox, .weather-summary, .city-grid{
     margin: 30px auto;
     padding: 15px;
@@ -169,20 +166,11 @@ h3 {
     list-style-type: none;
     padding: 0;
 }
-.articlepic {
-    width: 100%
-}
 .contacts li h4 {
     font-size: 1.5rem;
 }
 h4 {
     margin: 10px;
-}
-.hq-div {
-    padding-top: 10px;
-}
-.hq-map {
-    width: 100%;
 }
 
 .navbar-links li.active, .navbar-links li.active a  {
@@ -191,40 +179,35 @@ h4 {
     border-radius: 10px;
 }
 
-.city-card {
-    background-color: var(--accent1);
-    color: white;
-    margin-bottom: 20px;
-}
-.city-pic-box {
-    width: 300px;
-    margin: auto;
-}
-.city-pic {
-    width: 100%;
-    margin-bottom: 10px;
-}
-.town-motto{
-    font-weight: bold;
-    margin: -5px 0px 10px;
-    color:var(--secondary);
-    padding: 0px 5px;
-}
-.heading-city-cards {
-    font-size: 4rem;
-    font-family: 'Nanum Brush Script', cursive;
-    margin: 20px;
-    background-color: var(--secondary)
-}
+
 h3 {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 3rem;
     margin: 0px;
     text-shadow: 2px 2px var(--secondary);
 }
-.city-info div {
-    margin-top: 30px;
-}
 p {
     font-size: 1.2rem;
+}
+figcaption {
+    background-color: var(--secondary);
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 0px 0px 5px 5px; 
+}
+main{
+    margin: auto;
+    width: 90%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+figure img, figure {
+    width: 300px;
+    border-radius: 5px 5px 0px 0px; 
+}
+
+#number-days {
+    color: red;
 }

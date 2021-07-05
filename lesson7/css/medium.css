@@ -14,77 +14,8 @@
     footer {
         font-size: 1.7rem;
     }
-    .heading-city-cards {
-        margin: 30px auto;
-        width: 90%;
+    .gallery {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
     }
-    .articlepic {
-        width: 80%;
-    }
-    .prestonmap {
-        width: 80%;
-    }
-    .hero-div {
-        max-width: 80%;
-    }
-    .weather-summary {
-        background-color: rgba(0,0,0,0.7);
-        width: 350px;
-        color: white;
-        position: absolute;
-        top: 3px;
-        left: 40px;
-        margin: 0;
-        padding: 0;
-    }
-    .home-overlay {
-        color: white;
-        position: absolute;
-        background-color: rgba(0,0,0,0.8);
-        left: 46px;
-        top: 41px;
-        right: 126.967px;
-        font-size: 2rem;
-    }
-
-    .grid-item {
-        text-align: initial;
-    }
-    .contactbox, .city-card {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        
-    }
-    .contact-social {
-        order: 2;
-        padding: 8px;
-    }
-    .hq-div {
-        width: 400px;
-    }
-    .hq-map {
-        width: 100%;
-    }
-    .city-grid {
-        display: block
-    }
-    .city-pic {
-        margin: 20px 0px 10px;
-    }
-    .city-pic-box {
-        width: 250px;
-        margin: 0px;
-    }
-    .city-info {
-        width: 300px;
-    }
-    .city-card {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .fishhaven {
-        order: 1;
     }
 }
