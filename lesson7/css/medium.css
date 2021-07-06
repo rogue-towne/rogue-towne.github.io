@@ -17,5 +17,5 @@
     .gallery {
         grid-template-columns: repeat(2, minmax(240px, 1fr));
     }
-    }
+    
 }

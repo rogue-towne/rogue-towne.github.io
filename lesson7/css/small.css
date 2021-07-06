@@ -172,14 +172,11 @@ h3 {
 h4 {
     margin: 10px;
 }
-
 .navbar-links li.active, .navbar-links li.active a  {
     color: white;
     background-color: var(--accent1);
     border-radius: 10px;
 }
-
-
 h3 {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 3rem;
@@ -195,7 +192,7 @@ figcaption {
     margin-top: -5px;
     border-radius: 0px 0px 5px 5px; 
 }
-main{
+main {
     margin: auto;
     width: 90%;
 }
@@ -207,7 +204,6 @@ figure img, figure {
     width: 300px;
     border-radius: 5px 5px 0px 0px; 
 }
-
 #number-days {
     color: red;
 }

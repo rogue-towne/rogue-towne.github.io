@@ -15,7 +15,7 @@ header {
 .city-title {
     margin-top: 5px;
 }
-.contentbox, .contactbox, .weather-summary, .city-grid{
+.contentbox, .contactbox, .weather-summary, .city-grid, .events-box{
     margin: 30px auto;
     padding: 15px;
     background-color: var(--secondary);
@@ -34,20 +34,21 @@ header {
 .website-logo {
     display: flex;
     margin: .2rem;
-    align-items: center;
-    height: 70px;
+    height: 60px;
     text-decoration: none;
     color: var(--accent1);
+    width: fit-content;
 }
 .logo {
-    height: 100%;
+    height: 70%;
 }
 .website-title {
     font-size: 2.8rem;
-    margin-left: -40px;
+    margin: -8px 0px 0px -40px;
 }
 .motto {
-    margin: -7px 0px 0px -20px;
+    margin: -7px 0px 0px -18px;
+    font-size: 1rem;
  }
 .navbar-links ul {
     margin: 0;
@@ -126,7 +127,6 @@ footer a:hover{
 }
 
 .hero-div {
-    margin: 10px auto;
     position: relative;
 }
 .hero-pic {
@@ -285,7 +285,7 @@ form label.top input:required:valid {
     margin: 2rem 10rem;
 }
 
-.city-card {
+.city-card, .events-box {
     background-color: var(--accent1);
     color: white;
     margin-bottom: 20px;
@@ -304,12 +304,7 @@ form label.top input:required:valid {
     color:var(--secondary);
     padding: 0px 5px;
 }
-h2 {
-    font-size: 4rem;
-    font-family: 'Nanum Brush Script', cursive;
-    margin: 20px;
-    background-color: var(--secondary)
-}
+
 h3 {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 3rem;
@@ -321,4 +316,27 @@ h3 {
 }
 p {
     font-size: 1.2rem;
+}
+figcaption {
+    background-color: var(--secondary);
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 0px 0px 5px 5px; 
+}
+.gallery {
+    display: block;
+}
+figure img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px; 
+}
+figure {
+    
+}
+#number-days {
+    color: red;
+}
+.gallery-page {
+    margin: auto;
+    width: 90%;
 }

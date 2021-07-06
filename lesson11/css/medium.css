@@ -1,14 +1,17 @@
 @media only screen and (min-width: 32.5em) {
     .website-title {
         font-size: 4rem;
-        margin-left: 0px;
+        margin: -8px 0px 0px -58px;
     }
-    h2 {
-        margin: 30px auto;
-        width: 90%;
+    .logo {
+        height: 90%;
+    }
+    .website-logo {
+        height: 75px;
     }
     .motto {
-        margin: -20px 0px 0px -60px;
+        margin: -15px 0px 0px -16px;
+        font-size: 1.5rem;
     }
     footer {
         font-size: 1.7rem;
@@ -23,12 +26,13 @@
         width: 80%;
     }
     .hero-div {
-        max-width: 80%;
+        max-width: 100%;
     }
-    .forecast-table{
+    .forecast-table, .events-box{
         width: 70%;
         margin: 30px auto;
     }
+    
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
@@ -106,5 +110,9 @@
     }
     .fishhaven {
         order: 1;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
     }
 }

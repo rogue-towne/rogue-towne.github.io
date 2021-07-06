@@ -39,3 +39,17 @@ fetch(forecastApiURL)
         document.getElementById(`icon-${i+1}`).setAttribute('alt', desc);
     }
 });
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject['towns'];
+    fishhaven = document.querySelector('.fishhaven-events')
+    for (let i = 0; i < towns[6].events.length; i++ ) {
+        let p = document.createElement('p') 
+        p.textContent = towns[6].events[i];
+        fishhaven.appendChild(p);
+    }
+  });

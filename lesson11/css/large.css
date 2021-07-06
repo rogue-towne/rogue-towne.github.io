@@ -25,6 +25,10 @@
     .toggle-button{
         display: none;
     }
+    .hero-div {
+        margin: 30px auto;
+        width: 90%;
+    }
     .home-overlay {
         left: 46px;
         top: 41px;
@@ -100,5 +104,14 @@
     .contacts li {
         font-size: 1.3rem;
     }
+    .gallery {
+        grid-template-columns: repeat(3, minmax(300px, 500px));
+    }
+    figure img, figure {
+        width: 400px;
+    }
+    figure:hover {
+        box-shadow: 0 0 50px #333;
+    } 
 
 }   
