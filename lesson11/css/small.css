@@ -13,13 +13,19 @@ header {
     font-family: 'Nanum Brush Script', cursive;
 }
 .city-title {
-    margin-top: 5px;
+    font-size: 3rem;
+    font-family: 'Nanum Brush Script', cursive;
+    margin: 0px 0px;
 }
+
 .contentbox, .contactbox, .weather-summary, .city-grid, .events-box{
     margin: 30px auto;
     padding: 15px;
     background-color: var(--secondary);
     width: 90%;
+}
+.city-grid {
+    margin: 0px auto;
 }
 .pancake-banner {
     background-color: yellow;
@@ -187,10 +193,18 @@ main picture.hero-pic img{
     padding: 0;
 }
 .articlepic {
-    width: 100%
+    width: 200px;
+}
+.articlepic img {
+    width: 100%;
 }
 .contacts li h4 {
     font-size: 1.5rem;
+}
+.heading-city-cards {
+    font-size: 3rem;
+    font-family: 'Nanum Brush Script', cursive;
+    margin: 0px;
 }
 h4 {
     margin: 10px;
@@ -265,7 +279,9 @@ form label.top input:required:valid {
     background-color: white;
     padding: 0;
 }
-
+.user-details {
+    margin-top: 0px;
+}
 .user-details, .storm-details{
     background-color: var(--secondary);
 }
@@ -291,7 +307,7 @@ form label.top input:required:valid {
     margin-bottom: 20px;
 }
 .city-pic-box {
-    width: 300px;
+    width: 100%;
     margin: auto;
 }
 .city-pic {
@@ -310,6 +326,9 @@ h3 {
     font-size: 3rem;
     margin: 0px;
     text-shadow: 2px 2px var(--secondary);
+}
+.user-label h3, .storm-label h3 {
+    text-shadow:none;
 }
 .city-info div {
     margin-top: 30px;

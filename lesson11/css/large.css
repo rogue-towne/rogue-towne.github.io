@@ -60,7 +60,7 @@
     }
     .articlepic {
         float: right;
-        width: 400px;
+        width: 300px;
         padding: 20px;
     }
     .weather-summary {
@@ -89,7 +89,6 @@
     }
     .city-card{
         display: block;
-        width: 400px;
     }
     .city-pic-box {
         width: 300px;
@@ -97,9 +96,6 @@
     }
     .city-info {
         margin: auto;
-    }
-    .contentbox {
-        height: 350px;
     }
     .contacts li {
         font-size: 1.3rem;
