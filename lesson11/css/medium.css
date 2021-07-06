@@ -22,9 +22,7 @@
     .forecast {
         display: initial;
     }
-    .articlepic {
-        width: 300px;
-    }
+    
     .hero-div {
         max-width: 100%;
     }
@@ -64,15 +62,21 @@
         right: 126.967px;
         font-size: 2rem;
     }
-
+    .articlepic {
+        float: right;
+        width: 300px;
+        margin: 5px;
+    }
     .grid-item {
         text-align: initial;
+    }
+    .contentbox {
+        align-items: center;
     }
     .contactbox, .city-card {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
     }
     .contact-social {
         order: 2;
